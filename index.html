@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قرعة المجموعات</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="keywords" 
+        content="قرعة المجموعات اقامة سارة , دور المجموعات , أيمن ودور المجموعات , ">
+</head>
+<body>
+    <div class="container">
+        <h1>قرعة المجموعات</h1>
+
+        <input type="text" id="username" placeholder="أدخل اسمك">
+        <button onclick="addUser()">إضافة</button>
+
+        <h2>المشاركون:</h2>
+        <ul id="userList"></ul>
+
+        <h2>عدد المجموعات:</h2>
+        <input type="number" id="groupCount" min="2" max="10" value="2">
+        
+        <input type="password" id="adminPass" placeholder="كلمة مرور المطور">
+        <button onclick="checkAdmin()">تسجيل الدخول</button>
+
+        <button id="startDraw" onclick="startDraw()" class="hidden">بدء القرعة</button>
+
+        <h2>النتائج:</h2>
+        <div id="groups"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
